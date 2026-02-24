@@ -51,6 +51,7 @@ jobs:
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
+          NOTIFY_UNCHANGED=: ${{ secrets.NOTIFY_UNCHANGED }}
         run: uv run trigger.py
 
       - name: Upload status artifact
