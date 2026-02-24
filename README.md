@@ -22,6 +22,8 @@ You can deploy it to your own machine, but it is highly recommended to use Githu
 
 - ACTIVE_HOURS: optional, set the active hours to avoid disturbing during sleep. :-) Use 24 hour format. Some example: 08:00-12:00
 
+- NOTIFY_UNCHANGED: optional, set to `true` to receive notifications even when the visa status remains unchanged. By default, notifications are only sent when the status changes.
+
 
 - GH_TOKEN: to access previous status, you need to set a Github token with `repo` scope. You can create a new token in Github -> Settings -> Developer settings -> Personal access tokens.
 
