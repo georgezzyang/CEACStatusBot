@@ -60,7 +60,7 @@ class NotificationManager:
         statuses = self.__load_statuses()
 
         # Check if the current status is different from the last recorded status
-        if not statuses or current_status != statuses[-1].get("status", None) or current_last_updated != statuses[-1].get("last_updated", None):
+        if not statuses or current_status != statuses[-1].get("status", None):
             self.__save_current_status(current_status, current_last_updated)
             self.__send_notifications(res)
         else:
